@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/drawable/bill.xml" value="0.236" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/drawable/line.xml" value="0.2555" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/drawable/menus.xml" value="0.2555" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/drawable/profile.xml" value="0.2555" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_admin_home.xml" value="0.264" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_delivery.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_main.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_nointernet.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_order_food.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_register.xml" value="0.17375886524822695" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_signup.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/activity_user_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/bill_fragment.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/dropdown.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/dropdown2.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/fragment_shops.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/profile_fragment.xml" value="0.176" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/shops_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/layout/token.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/menu/bottom_nav.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_dummy.png.xml" value="0.2555" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_dummy.xml" value="0.2555" />
+        <entry key="..\:/Users/Jithan Veer/AndroidStudioProjects/FCFS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round1.png.xml" value="0.137" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
