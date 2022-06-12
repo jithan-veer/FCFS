@@ -43,23 +43,23 @@ public class shopsFragment extends Fragment {
          cv = shops.findViewById(R.id.shop1);
         fauth = FirebaseAuth.getInstance();
         fdb = FirebaseFirestore.getInstance();
+        DocumentReference df = fdb.collection("users").document(fauth.getCurrentUser().getUid());
+        df.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                str = value.getString("phone");
+            }
+        });
+        DocumentReference df2 = fdb.collection("identity").document("token");
+        df2.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                token = value.getString("current");
+            }
+        });
         cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DocumentReference df = fdb.collection("users").document(fauth.getCurrentUser().getUid());
-                df.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-                    @Override
-                    public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                             str = value.getString("phone");
-                    }
-                });
-                DocumentReference df2 = fdb.collection("identity").document("token");
-                df2.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-                    @Override
-                    public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                            token = value.getString("current");
-                    }
-                });
                 Toast.makeText(getActivity(),""+str+" "+token,Toast.LENGTH_LONG).show();
                 Intent i =  new Intent(getActivity(),OrderFood.class);
                 i.putExtra("number",str);
@@ -67,8 +67,6 @@ public class shopsFragment extends Fragment {
                 startActivity(i);
             }
         });
-
-
         return shops;
     }
 
