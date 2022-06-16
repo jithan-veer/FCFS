@@ -80,7 +80,7 @@ public class delivery extends AppCompatActivity {
             @Override
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),phone1,Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(),phone1,Toast.LENGTH_LONG).show();
                 sendSMS();
             }
         });
@@ -90,6 +90,9 @@ public class delivery extends AppCompatActivity {
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS}, 1);
+        }else if(ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED){
+            SmsManager smsManager = SmsManager.getDefault(); smsManager.sendTextMessage(phone1, null, "Your order is ready....do collect it", null, null);
+            Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -100,8 +103,6 @@ public class delivery extends AppCompatActivity {
             case 1:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 {
-//                    String phn = e1.getText().toString();
-//                    String msg = e2.getText().toString();
                     SmsManager smsManager = SmsManager.getDefault(); smsManager.sendTextMessage(phone1, null, "Your order is ready....do collect it", null, null);
                     Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show(); }
                 else

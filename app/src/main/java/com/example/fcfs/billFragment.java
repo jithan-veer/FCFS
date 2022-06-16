@@ -2,6 +2,8 @@ package com.example.fcfs;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -22,6 +24,7 @@ public class billFragment extends Fragment {
     private BillViewModel mViewModel;
     TextView billno,order,status,amount;
     View bills;
+    SharedPreferences sp;
     FirebaseAuth fauth;
     FirebaseFirestore fdb;
 
@@ -34,10 +37,18 @@ public class billFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         bills =  inflater.inflate(R.layout.bill_fragment, container, false);
 
-//        billno = bills.findViewById(R.id.nbill);
-//        order = bills.findViewById(R.id.norder);
-//        status= bills.findViewById(R.id.nstatus);
-//        amount = bills.findViewById(R.id.namount);
+        billno = bills.findViewById(R.id.nbill);
+        order = bills.findViewById(R.id.norder);
+        status= bills.findViewById(R.id.nstatus);
+        amount = bills.findViewById(R.id.namount);
+        sp = getActivity().getSharedPreferences("key", Context.MODE_PRIVATE);
+//        SharedPreferences.Editor edit = sp.edit();
+
+        billno.setText("Bill no: "+sp.getInt("bill no",-1));
+        order.setText(sp.getString("order"," "));
+        amount.setText("Amount :"+sp.getString("cost"," "));
+        status.setText("Status: pending");
+
 //        fauth= FirebaseAuth.getInstance();
 //        fdb = FirebaseFirestore.getInstance();
 //

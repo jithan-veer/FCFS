@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -38,9 +39,11 @@ public class OrderFood extends AppCompatActivity {
     Integer[] quantity = {1,2,3,4,5};
     Button btn;
     String order="",phone="";
+    SharedPreferences keyinfo;
     int n;
     FirebaseFirestore fdb;
     FirebaseAuth fauth;
+    String bill;
     final int UPI_PAYMENT=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,7 +134,7 @@ public class OrderFood extends AppCompatActivity {
                                 }
                             }
                         }
-                        String bill = String.valueOf(total);
+                        bill = String.valueOf(total);
                         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(OrderFood.this);
                         builder.setTitle("Confirm order?");
                         builder.setMessage("Your order costs "+bill+". Do you want to continue and pay the bill?");
@@ -159,6 +162,13 @@ public class OrderFood extends AppCompatActivity {
                                 HashMap<String,String> list = new HashMap<>();
                                 list.put("order",order);
                                 list.put("phone",phone);
+                                keyinfo = getSharedPreferences("key",Context.MODE_PRIVATE);
+                                SharedPreferences.Editor edit = keyinfo.edit();
+                                edit.putInt("bill no ",n);
+                                edit.putString("order",order);
+                                edit.putString("phone",phone);
+                                edit.putString("amount",bill);
+                                edit.commit();
 //                                list.put("cost",bill);
                                 df2.set(list).addOnFailureListener(new OnFailureListener() {
                                     @Override
