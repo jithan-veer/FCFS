@@ -19,7 +19,7 @@ public class admin_home extends AppCompatActivity {
         cd1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),delivery.class);
+                Intent i = new Intent(getApplicationContext(),deliveryUpdate.class);
                 startActivity(i);
             }
         });

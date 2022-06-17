@@ -44,9 +44,9 @@ public class billFragment extends Fragment {
         sp = getActivity().getSharedPreferences("key", Context.MODE_PRIVATE);
 //        SharedPreferences.Editor edit = sp.edit();
 
-        billno.setText("Bill no: "+sp.getInt("bill no",-1));
+        billno.setText("Bill no :"+String.valueOf(sp.getInt("bill no",-1)));
         order.setText(sp.getString("order"," "));
-        amount.setText("Amount :"+sp.getString("cost"," "));
+        amount.setText("Amount :"+sp.getString("amount"," "));
         status.setText("Status: pending");
 
 //        fauth= FirebaseAuth.getInstance();

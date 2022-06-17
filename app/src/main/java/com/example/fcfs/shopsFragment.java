@@ -60,7 +60,7 @@ public class shopsFragment extends Fragment {
         cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),""+str+" "+token,Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity(),""+str+" "+token,Toast.LENGTH_LONG).show();
                 Intent i =  new Intent(getActivity(),OrderFood.class);
                 i.putExtra("number",str);
                 i.putExtra("token",token);

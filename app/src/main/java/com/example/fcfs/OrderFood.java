@@ -164,7 +164,7 @@ public class OrderFood extends AppCompatActivity {
                                 list.put("phone",phone);
                                 keyinfo = getSharedPreferences("key",Context.MODE_PRIVATE);
                                 SharedPreferences.Editor edit = keyinfo.edit();
-                                edit.putInt("bill no ",n);
+                                edit.putInt("bill no",n);
                                 edit.putString("order",order);
                                 edit.putString("phone",phone);
                                 edit.putString("amount",bill);
