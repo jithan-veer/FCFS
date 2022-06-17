@@ -15,6 +15,7 @@
         android:layout_margin="10dp">
 
         <TextView
+            android:id="@+id/pos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bad_script"
@@ -54,35 +55,35 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:contentDescription="@string/common_google_play_services_enable_text"-->
+<!--                android:src="@drawable/call" />-->
 
-                android:contentDescription="@string/common_google_play_services_enable_text"
-                android:src="@drawable/call" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+<!--                <Button-->
+<!--                    android:id="@+id/call"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:text="call"/>-->
 
-                android:backgroundTint="@color/white"
-                android:contentDescription="@string/common_google_play_services_enable_text"
-                android:src="@drawable/message" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-
-                android:backgroundTint="#87ceeb"
-                android:contentDescription="@string/common_google_play_services_enable_text"
-                android:src="@drawable/cancel" />
-
+<!--            <Button-->
+<!--                android:id="@+id/msg"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="Message"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/cancel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="cancel"/>-->
 
         </LinearLayout>
 

@@ -42,7 +42,9 @@ public class User_home extends AppCompatActivity {
                 case R.id.profile:
                     selectedfragment=new ProfileFragment();
                     break;
-
+                case R.id.aboutus:
+                    selectedfragment=new AboutusFragment();
+                    break;
 
 
             }

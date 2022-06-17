@@ -29,5 +29,10 @@
 
     </item>
 
+    <item
+        android:id="@+id/aboutus"
+        android:title="About us"
+        android:icon="@drawable/info"></item>
+
 
 </menu>
